@@ -433,12 +433,16 @@ body {
 }
 .work__title{
     margin-top: 1rem;
-    font-weight: 700;
+    font-weight: 700;  
 }
+
 .work__badges{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
     margin-top: 1rem;
-    overflow: hidden;    
+    overflow: hidden;  
+    gap: 0.5rem      
 }
 .work__badge{
     background-color: #59ffb91c;
@@ -447,6 +451,7 @@ body {
     font-size: 1.2rem;
     padding: 0.65rem;
     margin-right: 1rem;
+    padding-top: 5px;
 }
 
 .work__links {    
