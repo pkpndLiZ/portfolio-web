@@ -138,7 +138,7 @@
               href="https://drive.google.com/file/d/1TN91zlI3569wcIeF7W27r8jHHfPERjjy/view?usp=sharing"
               target="_blank"
               class="header__resume"
-              >Resume</a
+              >MY CV</a
             >
           </div>
           <div class="header__right">
@@ -461,21 +461,33 @@
               alt="Group of people connecting with each other"
               class="contact-icon"
           /></a>
-
-          <img
-            src="./assets/connect/icons8-email.svg"
-            alt="Group of people connecting with each other"
-            class="contact-icon"
-          />
+          <a href="mailto:phanida.lip@gmail.com">
+            <img
+              src="./assets/connect/icons8-email.svg"
+              alt="Group of people connecting with each other"
+              class="contact-icon"
+            />
+          </a>
         </span>
         <div class="contact">
-          <form class="contact__form">
+          <form
+            class="contact__form"
+            action="https://formsubmit.co/phanida.lip@gmail.com"
+            method="POST"
+          >
             <div class="contact__field-wrapper">
-              <label for="contactNameTxt">Name:</label>
               <input
+                type="hidden"
+                name="_subject"
+                value="New submission From Portfolio."
+              />
+              <label for="contactNameTxt">Email:</label>
+              <input
+                class="input_email"
                 id="contactNameTxt"
-                type="text"
-                placeholder="What's your name?"
+                type="email"
+                name="email"
+                placeholder="What's your email?"
               />
             </div>
             <div class="contact__field-wrapper">
@@ -483,7 +495,15 @@
               <textarea
                 id="contactDescriptionTxt"
                 placeholder="Lets connect!"
+                name="message"
               ></textarea>
+              <!-- <input
+                style="height: 200px; vertical-align: top"
+                class="textarea"
+                type="text"
+                name="message"
+                placeholder="Lets connect!"
+              /> -->
             </div>
 
             <button type="submit" class="contact__submit-btn">Submit</button>

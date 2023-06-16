@@ -536,8 +536,10 @@ body {
     margin-bottom: .8rem;
     display: inline-flex;
 }
-.contact__field-wrapper input[type="text"],
-.contact__field-wrapper textarea{
+/* .contact__field-wrapper input[type="text"], */
+.contact__field-wrapper input[type="email"],
+.contact__field-wrapper textarea,
+.contact__field-wrapper .textarea {
     font-size: 1.6rem;
     font-weight: 600;
     color: white;
@@ -547,17 +549,23 @@ body {
     display: block;
     width: 100%;
 }
-.contact__field-wrapper input[type="text"]:focus,
+/* .contact__field-wrapper input[type="text"]:focus, */
+.contact__field-wrapper input[type="email"]:focus,
 .contact__field-wrapper textarea:focus,
-.contact__field-wrapper input[type="text"]:hover,
-.contact__field-wrapper textarea:hover{
+.contact__field-wrapper .textarea:focus,
+/* .contact__field-wrapper input[type="text"]:hover, */
+.contact__field-wrapper input[type="email"]:hover,
+.contact__field-wrapper textarea:hover,
+.contact__field-wrapper .textarea:hover{
     border-style: solid;
 }
-.contact__field-wrapper input[type="text"]{
+/* .contact__field-wrapper input[type="text"], */
+.contact__field-wrapper input[type="email"]{
     padding: 1.5rem;
     border: 2px dashed #64fcd9;
 }
-.contact__field-wrapper textarea{
+.contact__field-wrapper textarea,
+.contact__field-wrapper .textarea{
     padding: 1rem;
     border: 2px dashed #64fcd9;
     resize: none;
